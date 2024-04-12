@@ -2630,6 +2630,11 @@
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
 
+"@types/qs@^6.5.3":
+  version "6.9.14"
+  resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.14.tgz#169e142bfe493895287bee382af6039795e9b75b"
+  integrity sha512-5khscbd3SwWMhFqylJBLQ0zIu7c1K6Vz0uBIt915BI3zV0q1nfjRQD3RqSBcPaO6PHEF4ov/t9y89fSiyThlPA==
+
 "@types/react-native@~0.70.6":
   version "0.70.6"
   resolved "https://registry.npmjs.org/@types/react-native/-/react-native-0.70.6.tgz"
@@ -4043,6 +4048,17 @@ expo-keep-awake@~11.0.1:
   version "11.0.1"
   resolved "https://registry.npmjs.org/expo-keep-awake/-/expo-keep-awake-11.0.1.tgz"
   integrity sha512-44ZjgLE4lnce2d40Pv8xsjMVc6R5GvgHOwZfkLYtGmgYG9TYrEJeEj5UfSeweXPL3pBFhXKfFU8xpGYMaHdP0A==
+
+expo-linking@~3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/expo-linking/-/expo-linking-3.3.1.tgz#253b183321e54cb6fa1a667a53d4594aa88a3357"
+  integrity sha512-T3VIZMyZhkBOpHIyfT514rweGZZMbdg1vwavsfAkm6BFJ8G0iNVGbYMTpoUiQ9xdA0ARCcZbXFFb+WhqEUITgQ==
+  dependencies:
+    "@types/qs" "^6.5.3"
+    expo-constants "~14.0.0"
+    invariant "^2.2.4"
+    qs "^6.9.1"
+    url-parse "^1.5.9"
 
 expo-manifests@~0.4.0:
   version "0.4.0"
@@ -6453,6 +6469,13 @@ qs@6.11.0:
   dependencies:
     side-channel "^1.0.4"
 
+qs@^6.9.1:
+  version "6.12.0"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.12.0.tgz#edd40c3b823995946a8a0b1f208669c7a200db77"
+  integrity sha512-trVZiI6RMOkO476zLGaBIzszOdFPnCCXHPG9kn0yuS1uz6xdVxPfZdB3vUig9pxPFDM9BRAgz/YUIVQ1/vuiUg==
+  dependencies:
+    side-channel "^1.0.6"
+
 query-string@^7.0.0:
   version "7.1.1"
   resolved "https://registry.npmjs.org/query-string/-/query-string-7.1.1.tgz"
@@ -7058,7 +7081,7 @@ shell-quote@^1.6.1, shell-quote@^1.7.3:
   resolved "https://registry.npmjs.org/shell-quote/-/shell-quote-1.7.4.tgz"
   integrity sha512-8o/QEhSSRb1a5i7TFR0iM4G16Z0vYB2OQVs4G3aAFXjn3T6yEx8AZxy1PgDF7I00LZHYA3WxaSYIf5e5sAX8Rw==
 
-side-channel@^1.0.4:
+side-channel@^1.0.4, side-channel@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/side-channel/-/side-channel-1.0.6.tgz#abd25fb7cd24baf45466406b1096b7831c9215f2"
   integrity sha512-fDW/EZ6Q9RiO8eFG8Hj+7u/oW+XrPTIChwCOM2+th2A6OblDtYYIpve9m+KvI9Z4C9qSEXlaGR6bTEYHReuglA==

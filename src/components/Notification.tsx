@@ -1,28 +1,20 @@
 import { HStack, Text, IconButton, CloseIcon, Icon, Pressable } from 'native-base';
 import { Ionicons } from '@expo/vector-icons';
 import { OSNotification } from 'react-native-onesignal';
-import { useNavigation } from '@react-navigation/native';
+import { Linking } from 'react-native';
 
 type Props = {
   data: OSNotification
   onClose: () => void;
 }
 
-type AdditionalDataProps = {
-  route?: string
-  product_id?: string
-}
-
 export function Notification({ data, onClose }: Props) {
-  const {navigate} = useNavigation()
   
   function handleOnPress(){
-    const ad = data.additionalData as AdditionalDataProps
-    console.log(ad)
-
-    if(ad.route === "details" && ad.product_id)
-      navigate(ad.route, {productId: ad.product_id})
-      onClose()
+    if(data.launchURL){
+      Linking.openURL(data.launchURL)
+      onClose();
+    }
   }
 
   return (
